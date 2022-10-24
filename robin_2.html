@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>formulario</title>
+    <style>
+        h1 {
+            color: brown;
+            display: flex;
+            justify-content: center;
+        }
+        fieldset {
+            background-color: rgb(50, 113, 113);
+        }
+        body {
+            background-color: black;
+        }
+    </style>
+</head>
+<body>
+    <fieldset>
+        <h1>fomulario</h1>
+        <form action="grabar.thml" method="get">
+            Nro.documento: <input type="number" maxlength="10" minlength="5"
+                placeholder="ingrese su numero de documento"><br>
+            <p>
+                nombre:<input type="text" maxlength="50" placeholder="ingrese sus nombre"><br>
+            <p>
+                Apellido:* <input type="text" maxlength="50" required="true" placeholder="ingrese sus apeliidos"><br>
+            <p>
+                telefono:<input type="number" maxlength="20" required="true"
+                    placeholder=" ingrese su numero de telefono"><br>
+            <p>
+                contraseña:<input type="password" maxlength="20" required="true"
+                    placeholder="digitar su contraseña"><br>
+            <p>
+                suba su foto:<input type="file" maxlength="50"><br>
+            <p></p>
+            fecha:<input type="date" value="2018-02-11" min="2022-02-11" max="2022-03-11"><br>
+            <p></p>
+            escoge tu color : <input type="color" value=""> <br>
+            <p></p>
+            rango <input type="range" nim="0" max="10"> <br>
+            <p></p>
+            genero:<br>
+            masculino <input type="radio" checked> femenino <input type="radio">otro <input type="radio"><br>
+            hobbies: <br>
+            ler<input type="checkbox"> <br>
+            jugar<input type="checkbox" checked> <br>
+            cantar<input type="checkbox"> <br>
+            <input type="submit">
+            <input type="reset">
+        </form>
+    </fieldset>   
+    <h1>tabla de datos</h1>
+    <fieldset>
+        <form action="grabar.html" method="get">
+            <table width="600px" border="1">
+                <tr>
+                    <td>Nro.documento</td>
+                    <td> <input type="number" maxlength="10" minlength="5" placeholder="ingrese su numero de documento">
+                </tr>
+                <tr>
+                    <td>Apellido </td>
+                    <td rowspan=""> <input type="text" maxlength="50" required="true"
+                            placeholder="ingrese sus apeliidos"></td>
+                </tr>
+                <tr>
+                    <td>nombre </td>
+                    <td><input type="text" maxlength="50" placeholder="ingrese sus nombre"></td>
+                </tr>
+                <tr>
+                    <td>dirrecion </td>
+                    <td><input type="text" maxlength="50" placeholder="ingrese su direccion"></td>
+                </tr>
+                <tr>
+                    <td>telefono </td>
+                    <td><input type="number" maxlength="20" required="true"
+                            placeholder=" ingrese su numero de telefono"></td>
+                </tr>
+                <td>correo eletronico</td>
+                <td><input type="email" maxlength="50" placeholder="ingrese su correo eletronico"></td>
+                </tr>
+                <tr>
+                    <td>subir fotografia </td>
+                    <td><input type="file" maxlength="50"></td>
+                </tr>
+                <tr>
+                    <td>fecha de nacimiento</td>
+                    <td> <input type="date" value="2018-02-11" min="2012-02-11" max="2018-02-11"></td>
+                </tr>
+                <tr>
+                    <td>genero </td>
+                    <td> masculino <input type="radio" checked> femenino <input type="radio">otro <input type="radio">
+                    </td>
+                </tr>
+                <tr>
+                    <td>peliculas favoritas </td>
+                    <td> terror<input type="checkbox">
+                        miedo<input type="checkbox" checked>
+                        drama<input type="checkbox">
+                        infantil<input type="checkbox" checked>
+                        accion<input type="checkbox">
+                        otra<input type="checkbox">
+                </tr>
+                <tr>
+                    <td>contraseña</td>
+                    <td><input type="password" maxlength="20" required="true" placeholder="digitar su contraseña"></td>
+                </tr>
+                <tr>
+                    <td> confirmar contraseña</td>
+                    <td><input type="password" maxlength="20" required="true" placeholder="digitar su contraseña"></td>
+                </tr>
+            </table>
+            <input type="submit">
+            <input type="reset">
+    </fieldset>
+    </form>
+    <h1>formulario select</h1>
+    <fieldset>
+        <form action="grabar.html" method="get">
+            <select name="años">
+                <optgroup>
+                    <option value="">2020</option>
+                    <option value="">2019</option>
+                    <option value="">2018</option>
+                </optgroup>
+                <optgroup name="mes" label="mes del año">
+                    <option value="">enero</option>
+                    <option value="">febrero</option>
+                    <option value="">marzo</option>
+                    <option value="">abril</option>
+                    <option value="">mayo</option>
+                    <option value="">junio</option>
+                    <option value="">julio</option>
+                    <option value="">agosto</option>
+                    <option value="">septiembre</option>
+                    <option value="">octubre</option>
+                    <option value="">noviembre</option>
+                    <option value="">diciembre</option>
+        </form>
+        </select>
+        <select name="paices">
+            <optgroup name="paisces" label="paices latinoamericanos">
+                <option value="argentina">argentina</option>
+                <option value="brazil">brazil</option>
+                <option value="peru">republica de peru</option>
+                <option value="colombia">colombia</option>
+            </optgroup>
+            <optgroup name="capitales" label="capitales de los capitales">
+                <option value="bogota">bogota</option>
+                <option value="brasilian">brasilian</option>
+                <option value="lima">lima</option>
+                <option value="buenos aires">buenos aires</option>
+            </optgroup>
+        </select>
+    </fieldset>
+    <h1>lista formulario</h1>
+    <fieldset>
+        <form action="grabar.html" method="get">
+            <input type="list" list="lista1">
+            <datalist id="lista1">
+                <option value="perro">animal de cuatro patas domestico,compañia y tu mejor compañero</option>
+                <option value="gato">gato</option>
+            </datalist>
+        </form>
+    </fieldset>
+    <h1>formularios_1</h1>
+    <fieldset>
+        </form>
+        <form action="">
+            <legend>datos personales</legend>
+            <div>
+                <label for="name">nombre</label>
+                <input type="text" id="name">
+            </div>
+            <br>
+            <div>
+                <label for="surname">apeññodps</label>
+                <input type="text" id="surname">
+            </div>
+    </fieldset>
+    </form>
+    <h1>address</h1>
+<fieldset>
+    <address>
+        direccion:carrea 94 No.131C-18 <br>
+        telefono:322482024        
+    </address>
+</fieldset>
+<h1>blockquote</h1>
+<fieldset>
+ <blockquote cite="http//ww.gogles.com" >
+    thdcshgfwefvdcewfyyuf
+
+ </blockquote>
+
+</fieldset>
+<h1> pre</h1>
+<fieldset>
+<pre>
+    <h3>cuota del mil pesos</h3>
+    nombre   apellido       valor
+    manuel   bienestar      1000
+    andres   no se lo sabe  1000
+</pre>
+</fieldset>
+
+
+
+</body>
+</html>
